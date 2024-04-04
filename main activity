@@ -1,0 +1,129 @@
+package com.example.myhistoryapp
+
+import android.annotation.SuppressLint
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import java.lang.reflect.Type
+
+class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflateid")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val Search = findViewById<EditText>(R.id.Search)
+        val Click_Me = findViewById<Button>(R.id.Click_Me)
+        val History = findViewById<TextView>(R.id.HISTORY)
+        val Clear_text = findViewById<Button>(R.id.clear_text)
+        val Brief = findViewById<TextView>(R.id.Brief)
+
+        Clear_text.setOnClickListener { Search.text.clear() }
+
+        Click_Me.setOnClickListener {
+            val Search = Search.text.toString()
+
+            if (Search == "20") {
+                Brief.text =
+                    "Jahseh Dwayne Onfroy,better known by his stage name XXXTentacion, was an American rapper, singer and songwriter"
+
+            } else if (Search == "21") {
+                Brief.text =
+                    "Skye McCole Bartusiak, was an American film and television actress. She appeared in The Patriot (2000), Don't Say a Word (2001), as Rose Wilder in Beyond the Prairie."
+            } else if (Search == "22") {
+                Brief.text =
+                    "Aaliyah Dana Haughton, known mononymously as Aaliyah, was a trailblazer in the world of music and film. Born on January 16, 1979, in Brooklyn, New York, she displayed an affinity for the performing arts from an early age."
+            } else if (Search == "23") {
+                Brief.text =
+                    "Selena Quintanilla-Pérez, (April 16, 1971 – March 31, 1995) was an American singer, songwriter, spokesperson, model, actress, and fashion designer.  "
+            } else if (Search == "24") {
+                Brief.text =
+                    "The Notorious B.I.G, born Christopher Wallace on May 21, 1972, in Brooklyn, New York City, was an iconic American rapper and songwriter who highly influenced the landscape of hip-hop music."
+            } else if (Search == "25") {
+                Brief.text =
+                    "Brad Barron Renfro,(July 25, 1982 – January 15, 2008) was an American actor. He made his film debut at the age of 11 in the lead role in The Client, and went on to star in 21 feature films."
+            } else if (Search == "26") {
+                Brief.text =
+                    "Jean Harlow,born as Harlean Harlow Carpenter in Kansas City, Missouri, on March 3, 1911, was a legendary American actress and sex symbol of the 1930s."
+            } else if (Search == "27") {
+                Brief.text =
+                    "Jim Morrison,an iconic figure in the world of rock and roll, was born on December 8, 1943, in Melbourne, Florida."
+            } else if (Search == "28") {
+                Brief.text =
+                    "Tim Bergling, better known by his stage name Avicii (/əˈviːtʃi/), was a Swedish musician, DJ, remixer and record producer."
+            } else if (Search == "29") {
+                Brief.text =
+                    "Hank Williams,born Hiram King Williams on September 17, 1923, in Mount Olive, Alabama, was an American singer-songwriter and musician."
+            } else if (Search == "30") {
+                Brief.text =
+                    "Eazy-E,born as Eric Lynn Wright on September 7, 1964, made his mark in the world of hip-hop music."
+            } else if (Search == "31") {
+                Brief.text =
+                    "Cory Allan Michael Monteith,(May 11, 1982 – July 13, 2013) was a Canadian actor, singer, and musician, known for his role as Finn Hudson on the Fox television series Glee."
+            } else if (Search == "32") {
+                Brief.text =
+                    "Brittany Murphy,born on November 10, 1977, in Atlanta, Georgia, was a versatile American actress and singer who left an enduring mark on Hollywood."
+            } else if (Search == "33") {
+                Brief.text =
+                    "Samuel Cook, (January 22, 1931 – December 11, 1964), known professionally as Sam Cooke, was an American singer, songwriter, civil-rights activist and entrepreneur"
+            } else if (Search == "34") {
+                Brief.text =
+                    "Jayne Mansfield,born Vera Jayne Palmer on April 19, 1933, was an American actress, singer, and nightclub entertainer who emerged as a major Hollywood sex symbol during the 1950s and early 1960s."
+            } else if (Search == "35") {
+                Brief.text =
+                    "Wolfgang Amadeus Mozart,born on January 27, 1756 in Salzburg, Austria, was a maestro of the classical era, and profoundly influential in European music."
+
+            } else if (Search == "36") {
+                Brief.text =
+                    "Bob Marley, born Robert Nesta Marley on February 6, 1945, in Nine Mile, Jamaica, is globally recognized as a pioneering force in the genre of reggae music."
+
+            } else if (Search == "37") {
+                Brief.text =
+                    "Salvotore (Sal) Mineo Jr.Was born to Josephine and Sal Sr. (a caskets maker), who emigrated to the U.S. from Sicily."
+
+            } else if (Search == "38") {
+                Brief.text =
+                    "Scotty Beckett was one of the cutest, most successful child actors of the 1930s and 1940s"
+
+            } else if (Search == "39") {
+                Brief.text =
+                    "Dennis Carl Wilson (December 4, 1944 – December 28, 1983) was an American musician, singer, and songwriter who co-founded the Beach Boys"
+
+            } else if (Search == "40") {
+                Brief.text =
+                    "John Lennon, born on October 9, 1940, in Liverpool, England, was a musical genius whose influence as a singer, songwriter, and peace activist continues to shape the world of music."
+
+            } else if (Search == "41") {
+                Brief.text =
+                    "Kobe Bryant, Born on August 23, 1978, and raised in Philadelphia, Pennsylvania, NBA legend Kobe Bryant was the son of former NBA player Joe Bryant."
+
+            } else if (Search == "42") {
+                Brief.text =
+                    "Elvis Presley, often referred to as the King of Rock and Roll, was an iconic figure in 20th-century music."
+
+            } else if (Search == "43") {
+                Brief.text =
+                    "Natalie Wood, born Natalia Nikolaevna Zakharenko on July 20, 1938, was a renowned American actress whose career spanned over four decades, beginning as a child star and continuing into adulthood"
+
+            } else if (Search == "44") {
+                Brief.text =
+                    "Marvin Gaye was born Marvin Pentz Gay Jr. on April 2, 1939 in Washington D.C. The son of a church minister, his introduction to music occurred through singing gospel at his father's church, foreshadowing a career that would span multiple genres and decades."
+
+            } else if (Search == "45") {
+                Brief.text =
+                    "Freddie Mercury,Born as Farrokh Bulsara in the Sultanate of Zanzibar, Freddie Mercury is globally celebrated for his exceptional talent and charisma."
+            } else {
+                Brief.text = " Please Re-enter a correct or valid age"
+            }
+
+
+        }
+
+
+    }
+}
+
+
+
