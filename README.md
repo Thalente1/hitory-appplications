@@ -28,7 +28,10 @@ Val is a constant variable and cannot assigned multiple times. Whenever we decla
 
  
 
-MY BACKGROUND PICTURE   
+MY BACKGROUND PICTURE  
+![image](https://github.com/Thalente1/hitory-appplications/assets/160724260/d7159d2c-a12a-475d-bbe2-c294925bf1a4)
+
+
 Reference List: 
 http://m.imdb.com/name/nm91339558/
 http://www.thefamouspeople.com/died-at-35.php
